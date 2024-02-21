@@ -22,7 +22,7 @@ import javafx.scene.control.TextArea;
 import javafx.scene.control.TextField;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.input.KeyEvent;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Funcionario;
 import com.sin.model.Pessoa;
 
@@ -124,7 +124,7 @@ public class Tela_Admin_Menu_Funcionarios_Controller implements Initializable {
         func.setPassword(txtPassword.getText());
 
         dao.Atualizar(classe, Long.valueOf(txtId.getText()), func);
-        JOptionPane.showMessageDialog(null, "Atualizado COm sucesso");
+        //JOptionPane.showMessageDialog(null, "Atualizado COm sucesso");
         txtId.setText("");
         txtEmail.setText("");
         txtNome.setText("");
@@ -139,7 +139,7 @@ public class Tela_Admin_Menu_Funcionarios_Controller implements Initializable {
         Class<Funcionario> func_Classe = Funcionario.class;
         // dao.removerLogico(func_Classe, Long.valueOf(txtId.getText()), dao);
         dao.removeFisico(func_Classe, Long.valueOf(txtId.getText()));
-        JOptionPane.showMessageDialog(null, "Removido COm sucesso");
+       // JOptionPane.showMessageDialog(null, "Removido COm sucesso");
         txtId.setText("");
         txtEmail.setText("");
         txtNome.setText("");

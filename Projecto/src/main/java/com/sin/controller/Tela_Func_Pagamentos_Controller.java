@@ -23,7 +23,7 @@ import javafx.scene.control.ToggleGroup;
 import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Cliente;
 import com.sin.model.Pagamento_Mensalidade;
 import com.sin.model.Plano_de_Associacao;
@@ -303,10 +303,10 @@ public class Tela_Func_Pagamentos_Controller implements Initializable {
 
             // Atualize o status do pagamento e exiba uma mensagem de sucesso
             dao.Atualizar(Pagamento_Mensalidade.class, pagamento.getId(), pagamento);
-            JOptionPane.showMessageDialog(null, "Pago");
+         //   JOptionPane.showMessageDialog(null, "Pago");
               resetScreen();
         } else {
-            JOptionPane.showMessageDialog(null, "Fail");
+          //  JOptionPane.showMessageDialog(null, "Fail");
         }
     }
 
@@ -316,7 +316,7 @@ public class Tela_Func_Pagamentos_Controller implements Initializable {
             pagamento.setStatus(true);
             pagamento.setSituacao("Cancelado");
             dao.Atualizar(Pagamento_Mensalidade.class, pagamento.getId(), pagamento);
-            JOptionPane.showMessageDialog(null,"Pagamento cancelado");
+           // JOptionPane.showMessageDialog(null,"Pagamento cancelado");
               resetScreen();
         }
        

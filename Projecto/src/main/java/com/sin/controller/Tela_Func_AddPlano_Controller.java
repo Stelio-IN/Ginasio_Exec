@@ -33,7 +33,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Cliente;
 import com.sin.model.Pagamento_Mensalidade;
 import com.sin.model.PlanoCliente;

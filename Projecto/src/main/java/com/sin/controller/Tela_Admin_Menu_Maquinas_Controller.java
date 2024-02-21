@@ -31,7 +31,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Administrador;
 import com.sin.model.Equipamento;
 
@@ -196,7 +196,7 @@ public class Tela_Admin_Menu_Maquinas_Controller implements Initializable {
             System.out.println("Nenhum arquivo de imagem selecionado.");
         }
         dao.Atualizar(classe, Long.valueOf(txtId.getText()), equip);
-        JOptionPane.showMessageDialog(null, "Atualizado COm sucesso");
+       // JOptionPane.showMessageDialog(null, "Atualizado COm sucesso");
         txtId.setText("");
         txtMarca.setText("");
         txtNome.setText("");
@@ -277,7 +277,7 @@ public class Tela_Admin_Menu_Maquinas_Controller implements Initializable {
                 // Defina a imagem no ImageView
                 imageCamera.setImage(imagem);
             } else {
-                JOptionPane.showMessageDialog(null, "imagem nao encontrada");
+              //  JOptionPane.showMessageDialog(null, "imagem nao encontrada");
             }
 
         } else {

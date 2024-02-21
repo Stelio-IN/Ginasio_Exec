@@ -36,7 +36,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Avaliacoes_Fisicas;
 import com.sin.model.Cliente;
 import com.sin.model.Pagamento_Mensalidade;
@@ -160,10 +160,10 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
             if (clienteNovosDados.getPlanoCliente().isStatus() == true) {
                 clienteNovosDados.getPlanoCliente().setStatus(false);
                 dao.Atualizar(classe, clienteNovosDados.getId(), clienteNovosDados);
-                JOptionPane.showMessageDialog(null, "Plano Removido");
+              //  JOptionPane.showMessageDialog(null, "Plano Removido");
             }
         } else {
-            JOptionPane.showMessageDialog(null, "Impossivel remover Plano");
+          //  JOptionPane.showMessageDialog(null, "Impossivel remover Plano");
         }
     }
 
@@ -199,16 +199,16 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
                         pagamento.setPlanoCliente(clienteNovosDados.getPlanoCliente());
                         pagamento.setSituacao("Pendente");
                         dao.add(pagamento);
-                        JOptionPane.showMessageDialog(null, "Sucesso ao adicionar plano Total a pagar: " + valor);
+                     //   JOptionPane.showMessageDialog(null, "Sucesso ao adicionar plano Total a pagar: " + valor);
                     } else {
-                        JOptionPane.showMessageDialog(null, "Cliente com plano: " + clienteNovosDados.getPlanoCliente().getPlano().getNome() + "__ Estado: " + clienteNovosDados.getPlanoCliente().isStatus());
+                    //    JOptionPane.showMessageDialog(null, "Cliente com plano: " + clienteNovosDados.getPlanoCliente().getPlano().getNome() + "__ Estado: " + clienteNovosDados.getPlanoCliente().isStatus());
                     }
                 } else {
                     dao.add(planoSelecionado);
                     dao.add(pagamento);
                     clienteNovosDados.setPlanoCliente(planoSelecionado);
                     dao.Atualizar(classeCliente, clienteNovosDados.getId(), clienteNovosDados);
-                    JOptionPane.showMessageDialog(null, "Sucesso ao adicionar plano Total a pagar: " + valor);
+                   // JOptionPane.showMessageDialog(null, "Sucesso ao adicionar plano Total a pagar: " + valor);
                 }
             }
 
@@ -250,7 +250,7 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
                         dao.Atualizar(classeCliente, clienteNovosDados.getId(), clienteNovosDados);
                         dao.Atualizar(classeCliente, clienteAssociadoNovosDados.getId(), clienteAssociadoNovosDados);
 
-                        JOptionPane.showMessageDialog(null, "Sucesso ao adicionar Plano Casal. Total a pagar: " + valor);
+                     //   JOptionPane.showMessageDialog(null, "Sucesso ao adicionar Plano Casal. Total a pagar: " + valor);
                     }
                     if (clienteNovosDados.getPlanoCliente() == null && clienteAssociadoNovosDados.getPlanoCliente() != null
                             && !clienteAssociadoNovosDados.getPlanoCliente().isStatus()) {
@@ -280,7 +280,7 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
                         dao.Atualizar(classeCliente, clienteNovosDados.getId(), clienteNovosDados);
                         dao.Atualizar(classeCliente, clienteAssociadoNovosDados.getId(), clienteAssociadoNovosDados);
 
-                        JOptionPane.showMessageDialog(null, "Sucesso ao adicionar Plano Casal. Total a pagar: " + valor);
+                      //  JOptionPane.showMessageDialog(null, "Sucesso ao adicionar Plano Casal. Total a pagar: " + valor);
                     }
                     if (clienteNovosDados.getPlanoCliente() != null && clienteAssociadoNovosDados.getPlanoCliente() == null
                             && !clienteNovosDados.getPlanoCliente().isStatus()) {
@@ -307,7 +307,7 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
                         dao.Atualizar(classeCliente, clienteNovosDados.getId(), clienteNovosDados);
                         dao.Atualizar(classeCliente, clienteAssociadoNovosDados.getId(), clienteAssociadoNovosDados);
 
-                        JOptionPane.showMessageDialog(null, "Sucesso ao adicionar Plano Casal. Total a pagar: " + valor);
+                      //  JOptionPane.showMessageDialog(null, "Sucesso ao adicionar Plano Casal. Total a pagar: " + valor);
                     }
                     if (clienteNovosDados.getPlanoCliente() != null && clienteAssociadoNovosDados.getPlanoCliente() != null
                             && !clienteNovosDados.getPlanoCliente().isStatus() && !clienteNovosDados.getPlanoCliente().isStatus()) {
@@ -323,12 +323,12 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
                     }
 
                 } else {
-                    JOptionPane.showMessageDialog(null, "Sem cliente Associado");
+                  //  JOptionPane.showMessageDialog(null, "Sem cliente Associado");
                 }
             }
 
         } else {
-            JOptionPane.showMessageDialog(null, "Preencha os campos");
+           // JOptionPane.showMessageDialog(null, "Preencha os campos");
         }
     }
 
@@ -341,7 +341,7 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
             txtNomePlano.setText(plano.getNome());
             txtPrecoPlano.setText(String.valueOf(plano.getPreco()));
         } else {
-            JOptionPane.showMessageDialog(null, "Selecione Uma linha");
+           // JOptionPane.showMessageDialog(null, "Selecione Uma linha");
         }
     }
     private ObservableList<Plano_de_Associacao> observableListPlano;
@@ -461,7 +461,7 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
                 imageView.setFitHeight(93); // Altura desejada
                 imageViewAssociado.setImage(imagem);
             } else {
-                JOptionPane.showMessageDialog(null, "imagem nao encontrada");
+             //   JOptionPane.showMessageDialog(null, "imagem nao encontrada");
             }
         }
         if (clienteNovosDados.getImagem() != null) {
@@ -471,7 +471,7 @@ public class Tela_Menu_Cliente_Controller implements Initializable {
             imageView.setFitHeight(80); // Altura desejada
             imageView.setImage(imagem);
         } else {
-            JOptionPane.showMessageDialog(null, "imagem nao encontrada");
+          //  JOptionPane.showMessageDialog(null, "imagem nao encontrada");
         }
 
     }

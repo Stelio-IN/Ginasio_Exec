@@ -19,7 +19,7 @@ import javafx.scene.control.cell.PropertyValueFactory;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.text.Text;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Plano_de_Associacao;
 
 /**
@@ -94,11 +94,11 @@ public class Tela_Func_PlanoAss_Controller implements Initializable {
                  imageView.setFitWidth(95); // Largura desejada
             imageView.setFitHeight(91); // Altura desejada
             } else {
-                JOptionPane.showMessageDialog(null, "imagem nao encontrada");
+               // JOptionPane.showMessageDialog(null, "imagem nao encontrada");
             }
 
         } else {
-            JOptionPane.showMessageDialog(null, "Selecione Uma linha");
+           // JOptionPane.showMessageDialog(null, "Selecione Uma linha");
         }
     }
 }

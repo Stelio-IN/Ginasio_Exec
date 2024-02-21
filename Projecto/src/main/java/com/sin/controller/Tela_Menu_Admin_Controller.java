@@ -106,7 +106,7 @@ public class Tela_Menu_Admin_Controller implements Initializable {
         try {
             root = FXMLLoader.load(getClass().getResource(tela + ".fxml"));
         } catch (IOException ex) {
-            java.util.logging.Logger.getLogger(Tela_Menu_Admin_Controller.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+          //  java.util.logging.Logger.getLogger(Tela_Menu_Admin_Controller.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
         borderPane.setRight(root);

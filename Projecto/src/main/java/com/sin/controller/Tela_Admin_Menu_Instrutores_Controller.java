@@ -31,7 +31,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Instrutor;
 import com.sin.model.Pessoa;
 
@@ -115,9 +115,9 @@ public class Tela_Admin_Menu_Instrutores_Controller implements Initializable {
     @FXML
     void pesquisar(ActionEvent event) {
         if (!txtPesquisa.getText().equals("")) {
-            JOptionPane.showMessageDialog(null, txtPesquisa.getText());
+           // JOptionPane.showMessageDialog(null, txtPesquisa.getText());
         } else {
-            JOptionPane.showMessageDialog(null, "Campo de Texto Vazio");
+           // JOptionPane.showMessageDialog(null, "Campo de Texto Vazio");
         }
     }
 
@@ -212,11 +212,11 @@ public class Tela_Admin_Menu_Instrutores_Controller implements Initializable {
             Instru.setImagem(imagemBytes);
 
         } else {
-            JOptionPane.showMessageDialog(null, "Nenhuma imagem selecionada");
+           // JOptionPane.showMessageDialog(null, "Nenhuma imagem selecionada");
         }
 
         dao.Atualizar(classe, Long.valueOf(txtId.getText()), Instru);
-        JOptionPane.showMessageDialog(null, "Dados atualizados", "", JOptionPane.YES_OPTION);
+        //JOptionPane.showMessageDialog(null, "Dados atualizados", "", JOptionPane.YES_OPTION);
         txtId.setText("");
         txtEmail.setText("");
         txtNome.setText("");
@@ -237,7 +237,7 @@ public class Tela_Admin_Menu_Instrutores_Controller implements Initializable {
         Class<Instrutor> Instr_Classe = Instrutor.class;
         // dao.removerLogico(func_Classe, Long.valueOf(txtId.getText()), dao);
         dao.removeFisico(Instr_Classe, Long.valueOf(txtId.getText()));
-        JOptionPane.showMessageDialog(null, "Removido COm sucesso");
+       // JOptionPane.showMessageDialog(null, "Removido COm sucesso");
         txtId.setText("");
         txtEmail.setText("");
         txtNome.setText("");
@@ -328,7 +328,7 @@ public class Tela_Admin_Menu_Instrutores_Controller implements Initializable {
                 //Intrução que define a imagem no ImageView
                 imageCamera.setImage(imagem);
             } else {
-                JOptionPane.showMessageDialog(null, "imagem nao encontrada");
+              //  JOptionPane.showMessageDialog(null, "imagem nao encontrada");
             }
 
         } else {

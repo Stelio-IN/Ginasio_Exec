@@ -147,7 +147,8 @@ public class Tela_Menu_Func_Controller implements Initializable {
                 controller.setPessoa(pessoa);
             }
         } catch (IOException ex) {
-            java.util.logging.Logger.getLogger(Tela_Menu_Admin_Controller.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
+            System.out.println("erro");
+          //  java.util.logging.Logger.getLogger(Tela_Menu_Admin_Controller.class.getName()).log(java.util.logging.Level.SEVERE, null, ex);
         }
 
         borderPane.setRight(root);

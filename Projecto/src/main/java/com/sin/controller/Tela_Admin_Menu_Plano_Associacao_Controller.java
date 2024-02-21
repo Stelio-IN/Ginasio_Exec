@@ -29,7 +29,7 @@ import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.stage.FileChooser;
 import javafx.stage.Stage;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Plano_de_Associacao;
 
 /**
@@ -134,11 +134,11 @@ public class Tela_Admin_Menu_Plano_Associacao_Controller implements Initializabl
             plano.setImagem(imagemBytes);
 
         } else {
-            JOptionPane.showMessageDialog(null, "Nenhuma imagem selecionada");
+          //  JOptionPane.showMessageDialog(null, "Nenhuma imagem selecionada");
         }
 
         dao.Atualizar(classe, Long.valueOf(txtId.getText()), plano);
-        JOptionPane.showMessageDialog(null, "Dados atualizados", "", JOptionPane.YES_OPTION);
+       // JOptionPane.showMessageDialog(null, "Dados atualizados", "", JOptionPane.YES_OPTION);
         txtId.setText("");
 
         imageCamera.setImage(null);
@@ -152,7 +152,7 @@ public class Tela_Admin_Menu_Plano_Associacao_Controller implements Initializabl
         Class<Plano_de_Associacao> plano = Plano_de_Associacao.class;
         // dao.removerLogico(func_Classe, Long.valueOf(txtId.getText()), dao);
         dao.removeFisico(plano, Long.valueOf(txtId.getText()));
-        JOptionPane.showMessageDialog(null, "Removido COm sucesso");
+      //  JOptionPane.showMessageDialog(null, "Removido COm sucesso");
         txtId.setText("");
 
         txtNome.setText("");
@@ -230,7 +230,7 @@ public class Tela_Admin_Menu_Plano_Associacao_Controller implements Initializabl
                 // Defina a imagem no ImageView
                 imageCamera.setImage(imagem);
             } else {
-                JOptionPane.showMessageDialog(null, "imagem nao encontrada");
+              //  JOptionPane.showMessageDialog(null, "imagem nao encontrada");
             }
 
         } else {

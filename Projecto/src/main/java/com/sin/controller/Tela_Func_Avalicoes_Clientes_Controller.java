@@ -29,7 +29,7 @@ import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Avaliacoes_Fisicas;
 import com.sin.model.Cliente;
 import com.sin.model.Funcionario;
@@ -243,7 +243,7 @@ public class Tela_Func_Avalicoes_Clientes_Controller implements Initializable {
         } else {
             // Show an error message to the user indicating that some fields are invalid
             // You can use JavaFX dialogs or any other method to display the message
-            JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos corretamente.");
+          //  JOptionPane.showMessageDialog(null, "Por favor, preencha todos os campos corretamente.");
         }
     }
 /*

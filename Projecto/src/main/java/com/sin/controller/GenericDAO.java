@@ -4,29 +4,14 @@
  */
 package com.sin.controller;
 
-import com.sin.model.Administrador;
 import java.util.List;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 import javax.persistence.EntityManager;
 import javax.persistence.EntityManagerFactory;
-import javax.persistence.NamedQuery;
 import javax.persistence.Persistence;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.Predicate;
-import javax.persistence.criteria.Root;
-
-import javax.swing.JOptionPane;
-
-import com.sin.model.Ficha_Inscricao;
 import com.sin.model.Pessoa;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
-import org.hibernate.boot.registry.StandardServiceRegistryBuilder;
-import org.hibernate.cfg.Configuration;
-import org.hibernate.service.ServiceRegistry;
 
 /**
  *
@@ -50,11 +35,11 @@ public class GenericDAO {
             gerente.persist(obj);
             gerente.getTransaction().commit();
             gerente.close();
-            JOptionPane.showMessageDialog(null, "Gravado");
+           // JOptionPane.showMessageDialog(null, "Gravado");
         } catch (Exception e) {
             gerente.getTransaction().rollback();
             e.printStackTrace();
-            JOptionPane.showMessageDialog(null, "Erro ao gravar");
+           // JOptionPane.showMessageDialog(null, "Erro ao gravar");
         }
     }
 
@@ -169,7 +154,7 @@ public class GenericDAO {
                 gerente.merge(novosDados);
                 gerente.getTransaction().commit();
             } else {
-                JOptionPane.showMessageDialog(null, "ID inserido não existe");
+               // JOptionPane.showMessageDialog(null, "ID inserido não existe");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -199,7 +184,7 @@ public class GenericDAO {
                 gerente.merge(novosDados);
                 gerente.getTransaction().commit();
             } else {
-                JOptionPane.showMessageDialog(null, "ID inserido não existe");
+              //  JOptionPane.showMessageDialog(null, "ID inserido não existe");
             }
         } catch (Exception e) {
             e.printStackTrace();
@@ -228,7 +213,7 @@ public class GenericDAO {
                 gerente.remove(obj);
                 gerente.getTransaction().commit();
             } else {
-                JOptionPane.showMessageDialog(null, "ID insirido nao existe");
+              //  JOptionPane.showMessageDialog(null, "ID insirido nao existe");
             }
         } catch (Exception e) {
             e.printStackTrace();

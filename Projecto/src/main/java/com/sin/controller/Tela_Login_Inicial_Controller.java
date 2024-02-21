@@ -19,7 +19,7 @@ import javafx.scene.control.ButtonType;
 import javafx.scene.control.TextField;
 import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-import javax.swing.JOptionPane;
+//import javax.swing.JOptionPane;
 import com.sin.model.Administrador;
 import com.sin.model.Cliente;
 import com.sin.model.Funcionario;
@@ -96,7 +96,7 @@ public class Tela_Login_Inicial_Controller implements Initializable {
             }
 
         } else {
-            JOptionPane.showMessageDialog(null, "Credencias erradas");
+           // JOptionPane.showMessageDialog(null, "Credencias erradas");
         }
 
     }
