@@ -4,4 +4,5 @@ module com.sin.executavel {
 
     opens com.sin.executavel to javafx.fxml;
     exports com.sin.executavel;
+    requires java.persistence;
 }
