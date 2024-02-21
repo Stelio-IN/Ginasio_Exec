@@ -1,0 +1,25 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+-fx-background-color: #00ff0011;
+}
+
+.splitpane{
+    -fx-background-color: #05a764f0; 
+}
+
+.textfields_esquerda{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #ccc;
+    -fx-background-color: transparent;
+}
+
+.textfields_direita{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #fffbfb;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+

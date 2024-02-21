@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="1117.0" styleClass="mainFxmlClass" stylesheets="@../css/tela_func_maquinas.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tela_Func_Maquinas_Controller">
+   <children>
+      <Text layoutX="191.0" layoutY="169.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tela Funcionario Maquinas" wrappingWidth="227.708984375">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <AnchorPane id="AnchorPane" layoutX="75.0" layoutY="38.0" prefHeight="555.0" prefWidth="962.0" style="-fx-background-color: white; -fx-background-radius: 10px;" stylesheets="@../css/tela_func_maquinas.css">
+         <children>
+            <TableView fx:id="tabela" layoutX="483.0" layoutY="342.0" prefHeight="166.0" prefWidth="432.0" style="-fx-border-color: white;" styleClass="tabela">
+               <columns>
+                  <TableColumn fx:id="tabela_Modelo" prefWidth="125.60003662109375" styleClass="tabelinha" text="Modelo" />
+                  <TableColumn fx:id="tabela_Nome" prefWidth="149.5999755859375" styleClass="tabelinha" text="Nome" />
+                  <TableColumn fx:id="tabela_Marca" minWidth="0.0" prefWidth="155.20001220703125" styleClass="tabelinha" text="Marca" />
+                  <TableColumn fx:id="tabela_Imagem" prefWidth="180.00018310546875" text="Imagem" />
+               </columns>
+            </TableView>
+            <TextField fx:id="txtNome" layoutX="47.0" layoutY="205.0" prefHeight="33.0" prefWidth="290.0" promptText="Nome da maquina" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtModelo" layoutX="47.0" layoutY="266.0" prefHeight="33.0" prefWidth="290.0" promptText="Modelo" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtMarca" layoutX="47.0" layoutY="325.0" prefHeight="33.0" prefWidth="290.0" promptText="Marca" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </TextField>
+            <Text layoutX="219.0" layoutY="38.0" strokeType="OUTSIDE" strokeWidth="0.0" />
+            <TextField fx:id="txtId" layoutX="303.0" layoutY="161.0" prefHeight="25.0" prefWidth="34.0" promptText="10" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="483.0" layoutY="49.0" prefHeight="256.0" prefWidth="432.0" style="-fx-background-color: white; -fx-background-radius: 14px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.6315789222717285" green="0.5964912176132202" blue="0.5964912176132202" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <ImageView fx:id="imageCamera" fitHeight="210.0" fitWidth="209.0" layoutX="14.0" layoutY="36.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/adicionar-usuario.png" />
+                     </image>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.8842105269432068" green="0.8612865209579468" blue="0.8612865209579468" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </ImageView>
+                  <QuadCurve controlX="-96.88700866699219" controlY="-142.31651306152344" endX="74.07760620117188" endY="-11.387929916381836" fill="#05a764" layoutX="352.0" layoutY="75.0" rotate="178.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+                  <Button layoutX="298.0" layoutY="201.0" mnemonicParsing="false" onAction="#listar" prefHeight="29.0" prefWidth="86.0" style="-fx-background-radius: 10px;" styleClass="botao" text="Listar" textFill="WHITE">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.75789475440979" green="0.7438596487045288" blue="0.7438596487045288" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="302.0" layoutY="144.0" mnemonicParsing="false" onAction="#editar" prefHeight="29.0" prefWidth="79.0" style="-fx-background-radius: 10px;" styleClass="botao" text="Atualizar" textFill="WHITE">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.7368420958518982" green="0.7259259223937988" blue="0.7259259223937988" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="302.0" layoutY="82.0" mnemonicParsing="false" onAction="#carregarimg" prefHeight="29.0" prefWidth="79.0" style="-fx-background-radius: 10px;" styleClass="botao" text="Carregar" textFill="WHITE">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.6842105388641357" green="0.6791422963142395" blue="0.6791422963142395" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Button>
+                  <Text fill="WHITE" layoutX="234.0" layoutY="34.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Operações" wrappingWidth="146.1090087890625">
+                     <font>
+                        <Font name="System Bold Italic" size="19.0" />
+                     </font>
+                  </Text>
+               </children>
+            </AnchorPane>
+            <Label layoutX="50.0" layoutY="186.0" text="Nome da máquina" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="287.0" layoutY="166.0" text="Id:" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextArea fx:id="txtAreaDiscri" layoutX="47.0" layoutY="399.0" prefHeight="94.0" prefWidth="290.0" />
+            <Label layoutX="50.0" layoutY="249.0" text="Modelo " textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="308.0" text="Marca" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="50.0" layoutY="373.0" text="Funcionalidades" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Text fill="#175b09" layoutX="51.0" layoutY="162.0" lineSpacing="10.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Informações gerais" underline="true" wrappingWidth="190.1090087890625">
+               <font>
+                  <Font name="System Bold Italic" size="16.0" />
+               </font>
+            </Text>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7157894968986511" green="0.6839765906333923" blue="0.6839765906333923" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <QuadCurve controlX="255.68133544921875" controlY="-213.65289306640625" endX="294.62005615234375" endY="-3.255619525909424" fill="#3b4843" layoutX="298.0" layoutY="142.0" rotate="-178.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva">
+         <rotationAxis>
+            <Point3D z="-19.0" />
+         </rotationAxis>
+      </QuadCurve>
+      <Text fill="WHITE" layoutX="163.0" layoutY="84.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Gestão de máquinas" underline="true" wrappingWidth="227.708984375">
+         <font>
+            <Font name="System Bold Italic" size="20.0" />
+         </font>
+      </Text>
+   </children>
+</AnchorPane>

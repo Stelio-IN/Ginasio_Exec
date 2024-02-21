@@ -1,0 +1,52 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color:  #ffffff;
+    -fx-background-radius: 50px 50px 50px 50px;   
+}
+
+.imagemAdmin{
+  
+}
+
+.borderpane{
+  -fx-background-color: rgba(241, 255, 246, 0.95);
+}
+
+.pesquisar{
+  -fx-background-color:  #c2b8b841;
+}
+
+.painel{
+  -fx-background-color: #c3fdda52;
+  }
+
+  .painelinho {
+    -fx-background-color: linear-gradient(to right,  #025e388f, #000503bb);
+  
+  }
+  
+  .textfields_esquerda{
+        -fx-border-width: 0px 0px 1px 0px;
+        -fx-border-color: #ccc;
+        -fx-background-color: transparent;
+    }
+    
+     .botao{
+        -fx-background-color: linear-gradient(to right,  #0ce58b7b, #0226167b);
+        -fx-text-fill: rgb(255, 255, 255);
+        -fx-background-radius: 10px
+    }
+
+    .tabela{
+        -fx-background-color: linear-gradient(to left,  #580bff03, #059bff05);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 10px
+    }
+    
+    .tabelinha{
+        -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 0px;}

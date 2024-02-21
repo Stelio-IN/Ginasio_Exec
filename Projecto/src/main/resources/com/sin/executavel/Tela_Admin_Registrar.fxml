@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="629.0" prefWidth="1117.0" style="-fx-background-color: #f1fff6f2;" styleClass="mainFxmlClass" stylesheets="@../css/tela_admin_registrar.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tela_Admin_Registrar_Controller">
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="22.0" prefHeight="555.0" prefWidth="852.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow />
+         </effect>
+         <children>
+            <AnchorPane layoutX="78.0" layoutY="25.0" prefHeight="482.0" prefWidth="335.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5684210658073425" green="0.538947343826294" blue="0.538947343826294" />
+                     </color></DropShadow>
+               </effect>
+               <children>
+                  <TextField fx:id="txtNome" layoutX="28.0" layoutY="260.0" prefHeight="26.0" prefWidth="248.0" promptText="Admin Admin" styleClass="textfields_esquerda">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtEmail" layoutX="28.0" layoutY="316.0" prefHeight="26.0" prefWidth="248.0" promptText="Admin@gmail.com" styleClass="textfields_esquerda">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtCodigo" layoutX="29.0" layoutY="202.0" prefHeight="30.0" prefWidth="109.0" promptText="Código" styleClass="textfields_esquerda">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtPassword" layoutX="28.0" layoutY="373.0" prefHeight="26.0" prefWidth="248.0" promptText="Palavra-passe" styleClass="textfields_esquerda">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="150.0" fitWidth="150.0" layoutX="101.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/logo1_2.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="130.0" layoutY="428.0" mnemonicParsing="false" onAction="#cadastrar" prefHeight="30.0" prefWidth="90.0" styleClass="botao" text="Cadastrar">
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.7052631378173828" green="0.6765302419662476" blue="0.6765302419662476" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font></Button>
+                  <Label layoutX="35.0" layoutY="181.0" text="Código" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="35.0" layoutY="241.0" text="Nome do Administrador" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="32.0" layoutY="298.0" text="E-mail" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="31.0" layoutY="355.0" text="Palavra-passe" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="55.0" layoutY="139.0" text="Cadastro de Administrador" textFill="#487352">
+                     <font>
+                        <Font name="System Bold" size="19.0" />
+                     </font>
+                  </Label>
+                  <QuadCurve controlX="-196.60000610351562" controlY="48.600006103515625" endX="-46.000030517578125" endY="-21.511886596679688" fill="#05a764" layoutX="222.0" layoutY="22.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="476.0" layoutY="25.0" prefHeight="219.0" prefWidth="231.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.410526305437088" green="0.38923975825309753" blue="0.38923975825309753" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <ImageView fx:id="imageCamera" fitHeight="150.0" fitWidth="150.0" layoutX="19.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/adicionar-usuario.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="70.0" layoutY="174.0" mnemonicParsing="false" onAction="#carregarimg" prefHeight="30.0" prefWidth="90.0" styleClass="botao" text="Carregar " textFill="#8a1d1d">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Button>
+                  <QuadCurve controlX="-125.199951171875" controlY="18.0" endX="-109.0" endY="-21.51190185546875" fill="#05a764" layoutX="332.0" layoutY="22.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

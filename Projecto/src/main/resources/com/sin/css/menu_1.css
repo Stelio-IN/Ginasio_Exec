@@ -1,0 +1,38 @@
+/* Define a cor de preenchimento das áreas */
+.chart-series-area-fill { -fx-fill: #336699; }
+
+/* Define a cor e a largura da linha da série */
+.default-color0.chart-series-line { -fx-stroke: #336699; -fx-stroke-width: 2px; }
+
+/* Define a cor dos marcadores da série */
+.default-color0.chart-line-symbol { -fx-background-color: #336699, white; }
+
+/* Define a cor das linhas dos eixos */
+.chart-horizontal-grid-lines { -fx-stroke: #CCCCCC; }
+.chart-vertical-grid-lines { -fx-stroke: #CCCCCC; }
+
+/* Define a cor dos rótulos dos eixos */
+.axis-label { -fx-text-fill: #333333; }
+
+.textfields_esquerda{
+        -fx-border-width: 0px 0px 1px 0px;
+        -fx-border-color: #ccc;
+        -fx-background-color: transparent;
+    }
+    
+     .botao{
+        -fx-background-color: linear-gradient(to right,  #0ce58b7b, #0226167b);
+        -fx-text-fill: rgb(255, 255, 255);
+        -fx-background-radius: 10px
+    }
+    
+    .tabela{
+        -fx-background-color: linear-gradient(to left,  #580bff03, #059bff05);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 10px
+    }
+    
+    .tabelinha{
+        -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 0px;}

@@ -1,0 +1,23 @@
+/* style.css */
+
+/* Estilizar a seta de dropdown */
+.combo-box .arrow {
+    -fx-background-color: #336699;
+}
+
+/* Estilizar o fundo da lista suspensa */
+.combo-box-popup .list-view {
+    -fx-background-color: #ffffff;
+}
+
+/* Estilizar os itens na lista suspensa */
+.combo-box-popup .list-view .list-cell {
+    -fx-background-color: #f0f0f0;
+    -fx-text-fill: #333333;
+}
+
+/* Estilizar a borda do ComboBox */
+.combo-box {
+    -fx-border-color: #336699;
+    -fx-border-width: 2;
+}

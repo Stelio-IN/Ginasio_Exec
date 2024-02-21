@@ -1,0 +1,31 @@
+
+    .root{
+   -fx-background-image:url('../img/gym3.jpg') ;
+        -fx-background-size: cover;
+    }
+
+    .painel{
+        -fx-background-color: rgba(255, 255, 255, 0.717);
+        -fx-border-width: 2px 2px 2px 2px;
+        -fx-border-color: white;
+        -fx-background-radius: 10px;
+    }
+.botao{
+    -fx-background-color: linear-gradient(to bottom,  #0dbc73ea, #000100);   
+}
+
+.txtfield_confirmado{
+    -fx-background-color:  transparent;
+    -fx-border-color: white;
+    -fx-border-radius: 1px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: black;
+}
+
+.txtfield_nao_confirmado{
+    -fx-background-color:   #ff000017;
+    -fx-border-color: #ff0000;
+    -fx-border-radius: 1px;
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-text-fill: #ff0000;
+}

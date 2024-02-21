@@ -1,0 +1,41 @@
+/* Estilize o gráfico de área */
+.area-chart {
+    -fx-background-color: #f0f0f0; /* Cor de fundo do gráfico */
+    -fx-border-color: #d0d0d0; /* Cor da borda do gráfico */
+}
+
+/* Estilize a linha da série */
+.area-chart .chart-series-line {
+    -fx-stroke: #0073e6; /* Cor da linha da série */
+    -fx-stroke-width: 2; /* Largura da linha da série */
+}
+
+/* Estilize as áreas sob as séries */
+.area-chart .chart-series-area-line, .area-chart .chart-series-area-fill {
+    -fx-fill: rgba(0, 115, 230, 0.3); /* Cor da área sob a série */
+    -fx-stroke: #0073e6; /* Cor da linha da série */
+    -fx-stroke-width: 2; /* Largura da linha da série */
+}
+
+ .botao{
+        -fx-background-color: linear-gradient(to right,  #0ce58b7b, #0226167b);
+        -fx-text-fill: rgb(255, 255, 255);
+        -fx-background-radius: 10px
+    }
+
+    .painelcurva{
+        
+        -fx-background-color: linear-gradient(to right,  #0ce58bd7, #022616d8); 
+        -fx-fill: linear-gradient(to left,  #0ce58bd7, #022616d8); 
+    }
+    
+    .tabela{
+        -fx-background-color: linear-gradient(to left,  #580bff03, #059bff05);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 10px
+    }
+    
+    .tabelinha{
+        -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 0px;}

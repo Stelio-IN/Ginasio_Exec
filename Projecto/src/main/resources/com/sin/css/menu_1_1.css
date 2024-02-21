@@ -1,0 +1,45 @@
+/* Estilo para o gráfico de pizza (PieChart) */
+.chart-pie {
+    -fx-pie-background-color: transparent; /* Define o fundo do gráfico como transparente */
+    -fx-border-width: 10; /* Largura da "jante" */
+    -fx-border-color: #FFFFFF; /* Cor da "jante" (branco) */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.6), 10, 0, 0, 0); /* Adiciona uma sombra ao redor do gráfico */
+}
+
+/* Estilo para as fatias (slices) do gráfico de pizza */
+.chart-pie-label-line {
+    -fx-stroke: #FFFFFF; /* Cor da linha de ligação entre a fatia e o rótulo (branco) */
+}
+
+/* Estilo para os rótulos (labels) das fatias */
+.chart-pie-label {
+    -fx-text-fill: #FFFFFF; /* Cor do texto do rótulo (branco) */
+}
+
+/* Estilo para o rótulo da porcentagem (percent label) */
+.chart-pie-label-percent {
+    -fx-text-fill: #FFFFFF; /* Cor do texto do rótulo de porcentagem (branco) */
+}
+
+.textfields_esquerda{
+        -fx-border-width: 0px 0px 1px 0px;
+        -fx-border-color: #ccc;
+        -fx-background-color: transparent;
+    }
+    
+     .botao{
+        -fx-background-color: linear-gradient(to right,  #0ce58b7b, #0226167b);
+        -fx-text-fill: rgb(255, 255, 255);
+        -fx-background-radius: 10px
+    }
+
+    .tabela{
+        -fx-background-color: linear-gradient(to left,  #580bff03, #059bff05);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 10px
+    }
+    
+    .tabelinha{
+        -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 0px;}

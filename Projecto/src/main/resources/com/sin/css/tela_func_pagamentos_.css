@@ -1,0 +1,38 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+ .mainFxmlClass {
+    -fx-background-color: #e5f8e8;
+    }
+
+
+
+.textfields_esquerda{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #ccc;
+    -fx-background-color: transparent;
+}
+
+.cartao{
+    -fx-background-color: linear-gradient(to right,  #0ac1758f, #055c36bb);
+}
+
+.textfields_cartao{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #cccccc00;
+    -fx-background-color: transparent;
+    -fx-text-fill: #ffffff;
+}
+.titulosCartao{
+    -fx-text-fill: linear-gradient(to right,  #07b46c8f, #055c36bb);
+}
+
+.botao{
+    -fx-background-color: linear-gradient(to right,  #0ac1758f, #055c36bb);
+}
+
+.tabelinha{
+    -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-radius: 0px;}

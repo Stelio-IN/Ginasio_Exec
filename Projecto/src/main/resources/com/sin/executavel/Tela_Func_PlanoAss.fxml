@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane id="AnchorPane" prefHeight="524.0" prefWidth="1117.0" styleClass="mainFxmlClass" stylesheets="@../css/tela_func_planoass.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tela_Func_PlanoAss_Controller">
+   <children>
+      <AnchorPane layoutX="77.0" layoutY="59.0" prefHeight="555.0" prefWidth="962.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6736842393875122" green="0.6113060712814331" blue="0.6113060712814331" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <AnchorPane layoutX="35.0" layoutY="84.0" prefHeight="424.0" prefWidth="296.0" style="-fx-background-radius: 20px;" styleClass="plano">
+               <effect>
+                  <DropShadow />
+               </effect>
+               <children>
+                  <AnchorPane layoutX="52.0" layoutY="24.0" prefHeight="94.0" prefWidth="192.0" style="-fx-background-radius: 50px;" styleClass="splitpane">
+                     <children>
+                        <Label fx:id="txtPreco" alignment="CENTER" layoutX="13.0" layoutY="53.0" prefHeight="64.0" prefWidth="108.0" text="0000">
+                           <font>
+                              <Font name="System Bold" size="30.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="56.0" layoutY="96.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Label layoutX="131.0" layoutY="71.0" text="Mzn" textFill="#3e3c3c">
+                           <font>
+                              <Font name="System Bold" size="19.0" />
+                           </font>
+                        </Label>
+                        <Label fx:id="txtNomePlano" layoutX="42.0" layoutY="14.0" text="Pacote" textFill="#4e4e4e">
+                           <font>
+                              <Font name="System Bold" size="23.0" />
+                           </font>
+                        </Label>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.4736842215061188" green="0.45964911580085754" blue="0.45964911580085754" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+                  <AnchorPane layoutX="18.0" layoutY="174.0" prefHeight="235.0" prefWidth="263.0" style="-fx-background-radius: 50px;" styleClass="splitpane">
+                     <children>
+                        <Label layoutX="56.0" layoutY="96.0" textFill="WHITE">
+                           <font>
+                              <Font name="System Bold" size="16.0" />
+                           </font>
+                        </Label>
+                        <Text fx:id="txtDiscr" fill="#615858" layoutX="13.0" layoutY="159.0" strokeType="OUTSIDE" strokeWidth="0.0" textAlignment="JUSTIFY" wrappingWidth="236.53672790527344">
+                           <font>
+                              <Font name="System Bold" size="12.0" />
+                           </font>
+                        </Text>
+                        <Label layoutX="13.0" layoutY="122.0" text="Descrição" underline="true">
+                           <font>
+                              <Font name="System Bold Italic" size="14.0" />
+                           </font>
+                        </Label>
+                        <AnchorPane layoutX="89.0" layoutY="34.0" prefHeight="83.0" prefWidth="81.0" style="-fx-background-color: white;">
+                           <children>
+                              <ImageView fx:id="imageView" fitHeight="84.0" fitWidth="96.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/carregar.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </children>
+                     <effect>
+                        <DropShadow>
+                           <color>
+                              <Color red="0.4000000059604645" green="0.4000000059604645" blue="0.4000000059604645" />
+                           </color>
+                        </DropShadow>
+                     </effect>
+                  </AnchorPane>
+               </children>
+            </AnchorPane>
+            <TableView fx:id="tabela" layoutX="438.0" layoutY="341.0" prefHeight="166.0" prefWidth="455.0" style="-fx-border-color: white;" styleClass="tabela">
+               <columns>
+                  <TableColumn fx:id="colunaNome" prefWidth="110.39999103546143" styleClass="tabelinha" text="Nome" />
+                  <TableColumn fx:id="colunaPreco" prefWidth="172.8000030517578" styleClass="tabelinha" text="Preço" />
+                  <TableColumn fx:id="colunaStatus" minWidth="0.0" prefWidth="170.0" styleClass="tabelinha" text="Status" />
+               </columns>
+            </TableView>
+            <QuadCurve controlX="-66.25228881835938" controlY="-211.08114624023438" endX="50.0" layoutX="809.0" layoutY="-22.7" rotate="-132.9" startX="-306.0330810546875" startY="382.3230895996094" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+            </QuadCurve>
+            <AnchorPane layoutX="440.0" prefHeight="122.0" prefWidth="523.0" styleClass="painelcurva">
+               <children>
+                  <Label layoutX="63.0" layoutY="61.0" text="Planos de Associação" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="34.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

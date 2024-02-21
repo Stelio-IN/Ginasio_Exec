@@ -1,0 +1,67 @@
+/* Estilize o gráfico LineChart */
+.chart-line-symbol {
+    -fx-background-color: #0078d4; /* Define a cor dos símbolos no gráfico */
+    -fx-padding: 5px;              /* Define o preenchimento dos símbolos */
+    -fx-shape: "M -10 -5 L 10 0 L -10 5 Z"; /* Define o formato dos símbolos como uma seta */
+}
+
+/* Estilize o eixo Y do gráfico */
+.chart-axis-label {
+    -fx-font-size: 14px;   /* Define o tamanho da fonte dos rótulos do eixo Y */
+    -fx-text-fill: #333333; /* Define a cor do texto dos rótulos do eixo Y */
+}
+
+/* Estilize as linhas do gráfico */
+.chart-series-line {
+    -fx-stroke: #0078d4;   /* Define a cor das linhas do gráfico */
+    -fx-stroke-width: 2px; /* Define a largura das linhas do gráfico */
+}
+
+/* Estilize as marcas no eixo X */
+.chart-vertical-zero-line {
+    -fx-stroke: #cccccc;   /* Define a cor das marcas no eixo X */
+}
+
+/* Estilize o background do gráfico */
+.chart-plot-background {
+    -fx-background-color: #f0f0f0; /* Defina a cor de fundo do gráfico */
+}
+
+/* Estilize o eixo Y do gráfico */
+.chart-vertical-zero-line {
+    -fx-stroke: #333333; /* Defina a cor da linha zero no eixo Y */
+}
+
+/* Estilize o eixo X do gráfico */
+.chart-horizontal-zero-line {
+    -fx-stroke: #333333; /* Defina a cor da linha zero no eixo X */
+}
+
+/* Estilize as linhas do gráfico */
+.chart-series-line {
+    -fx-stroke: #0078d4;   /* Defina a cor das linhas do gráfico */
+    -fx-stroke-width: 2px; /* Defina a largura das linhas do gráfico */
+}
+
+/* Estilize as marcas no eixo X */
+.chart-vertical-grid-lines {
+    -fx-stroke: #ccc; /* Defina a cor das marcas no eixo X */
+}
+
+.botao{
+        -fx-background-color: linear-gradient(to right,  #0ce58b7b, #0226167b);
+        -fx-text-fill: rgb(255, 255, 255);
+        -fx-background-radius: 10px
+    }
+
+    .painelcurva{
+        
+        -fx-background-color: linear-gradient(to right,  #0ce58bd7, #022616d8); 
+        -fx-fill: linear-gradient(to left,  #0ce58bd7, #022616d8); 
+    }
+    
+    .textfields_esquerda{
+        -fx-border-width: 0px 0px 1px 0px;
+        -fx-border-color: #ccc;
+        -fx-background-color: transparent;
+    }

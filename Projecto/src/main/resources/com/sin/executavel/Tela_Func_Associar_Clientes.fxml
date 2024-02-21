@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1109.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tela_Func_Associar_Clientes_Controller">
+    <stylesheets>
+        <URL value="@/css/tela_func_associar_clientes.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="14.0" layoutY="22.0" prefHeight="597.0" prefWidth="1017.0" style="-fx-background-color: white; -fx-background-radius: 20px;" stylesheets="@../css/tela_func_associar_clientes.css">
+         <children>
+            <AnchorPane layoutX="40.0" layoutY="20.0" prefHeight="269.0" prefWidth="558.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5263158082962036" green="0.4736842215061188" blue="0.4736842215061188" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <TextField fx:id="txtCodigoPrimeiroCliente" layoutX="131.0" layoutY="68.0" prefHeight="31.0" prefWidth="116.0" promptText="Código" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNomePrimeiroCliente" layoutX="21.0" layoutY="106.0" prefHeight="30.0" prefWidth="226.0" promptText="Ex: Stelio" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtGeneroPrimeiroCliente" layoutX="21.0" layoutY="157.0" prefHeight="30.0" prefWidth="226.0" promptText="Ex: Masculino" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNomePrimeiroAssociado" layoutX="21.0" layoutY="213.0" prefHeight="30.0" prefWidth="226.0" promptText="Ex: Maria" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fx:id="imageViewPrimeiro" fitHeight="99.0" fitWidth="128.0" layoutX="270.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/adicionar-usuario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imageViewPrimeiroAssociado" fitHeight="99.0" fitWidth="128.0" layoutX="435.0" layoutY="113.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/adicionar-usuario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="60.0" layoutX="387.0" layoutY="136.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/relacionamento.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="24.0" layoutY="88.0" text="Nome " textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="141.0" text="Genero" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="22.0" layoutY="196.0" text="Cliente associado" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="21.0" layoutY="30.0" text="Informações do cliente vinculador" textFill="#057326" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <QuadCurve controlX="-101.20002746582031" controlY="83.19999694824219" endX="73.0" endY="-21.511882781982422" fill="#05a764" layoutX="480.0" layoutY="22.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+                  <Label layoutX="98.0" layoutY="74.0" text="Cod:" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="44.0" layoutY="313.0" prefHeight="256.0" prefWidth="550.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4736842215061188" green="0.429824560880661" blue="0.429824560880661" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <TextField fx:id="txtNomeSegundoCliente" layoutX="20.0" layoutY="97.0" prefHeight="30.0" prefWidth="226.0" promptText="Ex: Joana" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtCodigoSegundoCliente" layoutX="128.0" layoutY="62.0" prefHeight="31.0" prefWidth="116.0" promptText="Código" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtNomeSegundoAssociado" layoutX="16.0" layoutY="206.0" prefHeight="30.0" prefWidth="226.0" promptText="Ex: Sumeid" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtGeneroSegundoCliente" layoutX="18.0" layoutY="151.0" prefHeight="30.0" prefWidth="226.0" promptText="Ex: Feminino" styleClass="textfields_esquerda">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fx:id="imageViewSegundo" fitHeight="99.0" fitWidth="128.0" layoutX="263.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/adicionar-usuario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="imageViewSegundoAssociado" fitHeight="99.0" fitWidth="128.0" layoutX="431.0" layoutY="102.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/adicionar-usuario.png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="42.0" fitWidth="60.0" layoutX="375.0" layoutY="130.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/relacionamento.png" />
+                     </image>
+                  </ImageView>
+                  <Label layoutX="21.0" layoutY="77.0" text="Nome " textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="186.0" text="Cliente associado" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="134.0" text="Genero" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="16.0" layoutY="25.0" text="Informações do cliente vinculado" textFill="#057326" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="97.0" layoutY="65.0" text="Cod:" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <QuadCurve controlX="-101.20002746582031" controlY="83.19999694824219" endX="73.0" endY="-21.511882781982422" fill="#05a764" layoutX="481.0" layoutY="22.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+               </children>
+            </AnchorPane>
+            <AnchorPane layoutX="637.0" layoutY="14.0" prefHeight="359.0" prefWidth="288.0" style="-fx-background-color: white; -fx-background-radius: 10px;">
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5684210658073425" green="0.5263158082962036" blue="0.5263158082962036" />
+                     </color>
+                  </DropShadow>
+               </effect>
+               <children>
+                  <ScrollPane fx:id="scrollPane" layoutX="49.0" layoutY="83.0" prefHeight="122.0" prefWidth="208.0" style="-fx-background-color: white;">
+                     <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="113.0" prefWidth="200.0" style="-fx-background-color: transparent;">
+                           <children>
+                              <ListView fx:id="listView" prefHeight="121.0" prefWidth="208.0" style="-fx-background-color: white;" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </ScrollPane>
+                  <TextField fx:id="txtPesquisa" layoutX="49.0" layoutY="53.0" onKeyReleased="#listarPesquisa" prefHeight="30.0" prefWidth="208.0" promptText="Pesquise aqui" style="-fx-border-color: #cccccc; -fx-background-color: transparent; -fx-border-width: 0px 0px 1px;">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </TextField>
+                  <ImageView fitHeight="17.0" fitWidth="18.0" layoutX="216.0" layoutY="58.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../img/lupa.png" />
+                     </image>
+                  </ImageView>
+                  <Button layoutX="166.0" layoutY="206.0" mnemonicParsing="false" onAction="#limparCampos" prefHeight="26.0" prefWidth="100.0" styleClass="botao" text="Limpar">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="166.0" layoutY="308.0" mnemonicParsing="false" onAction="#desassociarClientes" prefHeight="26.0" prefWidth="100.0" styleClass="botao" text="Desassociar">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Button layoutX="166.0" layoutY="258.0" mnemonicParsing="false" onAction="#AssociarClientes" prefHeight="26.0" prefWidth="99.0" styleClass="botao" text="Associar">
+                     <font>
+                        <Font name="System Bold Italic" size="14.0" />
+                     </font>
+                  </Button>
+                  <Label layoutX="22.0" layoutY="18.0" text="Operações" textFill="#057326" underline="true">
+                     <font>
+                        <Font name="System Bold Italic" size="18.0" />
+                     </font>
+                  </Label>
+                  <QuadCurve controlX="-109.199951171875" controlY="27.800003051757812" endX="-101.20001220703125" endY="-21.511871337890625" fill="#05a764" layoutX="379.0" layoutY="21.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+               </children>
+            </AnchorPane>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.4000000059604645" green="0.36000001430511475" blue="0.36000001430511475" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

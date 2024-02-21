@@ -1,0 +1,22 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+.mainFxmlClass {
+    -fx-background-color: rgba(183, 247, 247, 0.292);
+}
+.btn{
+    -fx-background-color: #00ff001e;
+}
+
+.painelinho {
+    -fx-background-color: linear-gradient(to right,  #025e388f, #115f2c);
+  
+  }
+
+  .painelinho-1 {
+    -fx-background-color: linear-gradient(to right,  #00150ce4, #001607);
+
+    
+  
+  }

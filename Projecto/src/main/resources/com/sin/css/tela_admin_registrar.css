@@ -1,0 +1,40 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+ .mainFxmlClass {
+    -fx-background-color: #f1fff6f2;
+    }
+.textfields_esquerda{
+    -fx-border-width: 0px 0px 1px 0px;
+    -fx-border-color: #ccc;
+    -fx-background-color: transparent;
+}
+
+.painelzinho{
+    -fx-background-color: #05a764;
+}
+
+.painelcurva{
+        
+    
+    -fx-fill: linear-gradient(to right,  #0ce58bd7, #022616c8); 
+}
+
+.tabela{
+    -fx-background-color: linear-gradient(to left,  #580bff03, #059bff05);
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-radius: 10px
+}
+
+.tabelinha{
+    -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+    -fx-text-fill: rgb(0, 0, 0);
+    -fx-background-radius: 0px;}
+
+.botao{
+    -fx-background-color: linear-gradient(to right,  #0ce58b8f, #0226169a);
+    -fx-text-fill: rgb(255, 255, 255);
+    -fx-background-radius: 10px
+}
+

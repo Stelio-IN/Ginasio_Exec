@@ -1,0 +1,347 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.effect.InnerShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="640.0" prefWidth="1109.0" styleClass="mainFxmlClass" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tela_Func_Avalicoes_Clientes_Controller">
+    <stylesheets>
+        <URL value="@/css/tela_func_avalicoes_clientes.css" />
+    </stylesheets>
+   <children>
+      <AnchorPane layoutX="75.0" layoutY="38.0" prefHeight="555.0" prefWidth="962.0" style="-fx-background-color: white; -fx-background-radius: 20px;" stylesheets="@../css/tela_func_avalicoes_clientes.css">
+         <children>
+            <SplitPane prefHeight="555.0" prefWidth="502.0" style="-fx-background-radius: 20px 0px  0px 20px;" styleClass="splitpane" />
+            <TextField fx:id="txtNomeCliente" layoutX="40.0" layoutY="87.0" prefHeight="30.0" prefWidth="185.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtAltura" layoutX="40.0" layoutY="142.0" prefHeight="30.0" prefWidth="186.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtBraco" layoutX="37.0" layoutY="436.0" prefHeight="30.0" prefWidth="187.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtCap_Vascular" layoutX="37.0" layoutY="378.0" prefHeight="30.0" prefWidth="186.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtIndi_Mass_Corp" layoutX="37.0" layoutY="319.0" prefHeight="30.0" prefWidth="186.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtPeso" layoutX="40.0" layoutY="199.0" prefHeight="30.0" prefWidth="186.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtForca_Muscular" layoutX="40.0" layoutY="261.0" prefHeight="30.0" prefWidth="186.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtCodigoCliente" layoutX="256.0" layoutY="436.0" prefHeight="30.0" prefWidth="179.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtQuadril" layoutX="256.0" layoutY="199.0" prefHeight="30.0" prefWidth="179.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtPanturrilha" layoutX="257.0" layoutY="142.0" prefHeight="30.0" prefWidth="179.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtCoxa" layoutX="259.0" layoutY="88.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextArea fx:id="txtAreaDiscricao" layoutX="551.0" layoutY="257.0" prefHeight="103.0" prefWidth="212.0" promptText="Comentarios opcionais sobre a actual situacao do cliente" />
+            <TextField fx:id="txtNomeInstrutor" layoutX="256.0" layoutY="319.0" prefHeight="30.0" prefWidth="179.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TextField fx:id="txtNomeFuncionario" layoutX="256.0" layoutY="378.0" prefHeight="30.0" prefWidth="179.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <TableView fx:id="tabelaInstrutor" layoutX="552.0" layoutY="397.0" prefHeight="141.0" prefWidth="370.0" style="-fx-border-color: white;" styleClass="tabela">
+              <columns>
+                <TableColumn fx:id="colunaCodigo" prefWidth="189.60003662109375" styleClass="tabelinha" text="Código" />
+                  <TableColumn fx:id="colunaNome" prefWidth="179.99993896484375" styleClass="tabelinha" text="Nome" />
+              </columns>
+            </TableView>
+            <TextField fx:id="txtNotaFinal" layoutX="37.0" layoutY="501.0" prefHeight="30.0" prefWidth="186.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <Button layoutX="356.0" layoutY="501.0" mnemonicParsing="false" onAction="#LimparCampos" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Limpar " textFill="#04985b">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.38947367668151855" green="0.37360623478889465" blue="0.37360623478889465" />
+                     </color>
+                  </DropShadow>
+               </effect></Button>
+            <Button layoutX="247.0" layoutY="501.0" mnemonicParsing="false" onAction="#gravarAvaliacao" prefHeight="30.0" prefWidth="99.0" style="-fx-background-color: white; -fx-background-radius: 20px;" text="Gravar" textFill="#04985b">
+               <font>
+                  <Font name="System Bold Italic" size="12.0" />
+               </font>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.38947367668151855" green="0.37360623478889465" blue="0.37360623478889465" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </Button>
+            <TextField fx:id="txtPeito" layoutX="256.0" layoutY="259.0" prefHeight="30.0" prefWidth="179.0" styleClass="textfields_direita">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+               <effect>
+                  <InnerShadow>
+                     <color>
+                        <Color red="1.0" green="1.0" blue="1.0" />
+                     </color>
+                  </InnerShadow>
+               </effect></TextField>
+            <ScrollPane fx:id="scrollPane" layoutX="726.0" layoutY="55.0" prefHeight="200.0" prefWidth="206.0" style="-fx-background-color: white;">
+               <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="196.0" prefWidth="204.0" style="-fx-background-color: white;">
+                     <children>
+                        <ListView fx:id="listView" layoutX="-3.0" layoutY="-2.0" prefHeight="200.0" prefWidth="206.0" style="-fx-background-color: white;" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </ScrollPane>
+            <TextField fx:id="txtPesquisa" layoutX="726.0" layoutY="28.0" onKeyReleased="#listarPesquisa" prefHeight="27.0" prefWidth="206.0" promptText="Pesquise aqui" style="-fx-border-color: #cccccc; -fx-border-width: 0px 0px 1px 0px; -fx-background-color: transparent;">
+               <font>
+                  <Font size="14.0" />
+               </font></TextField>
+            <ImageView fitHeight="17.0" fitWidth="21.0" layoutX="894.0" layoutY="33.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/lupa.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="42.0" layoutY="70.0" text="Nome do cliente" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="125.0" text="Altura?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="183.0" text="Peso?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="42.0" layoutY="243.0" text="Força?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="301.0" text="Imc?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="360.0" text="Capacidade cardiovascular?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="40.0" layoutY="419.0" text="Circunfêrencia do braço?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="258.0" layoutY="70.0" text="Circunfêrencia da coxa?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="256.0" layoutY="125.0" text="Circunfêrencia panturrilha?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="257.0" layoutY="183.0" text="Circunfêrencia do quadril?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="243.0" text="Circunfêrencia do peito?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="301.0" text="Instrutor?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="360.0" text="Funcionário?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="255.0" layoutY="419.0" text="Código?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="479.0" text="Nota de avaliação?" textFill="WHITE">
+               <font>
+                  <Font name="System Italic" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="43.0" layoutY="19.0" text="Teste de Avaliação do cliente" textFill="#daffe8" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="20.0" />
+               </font>
+            </Label>
+            <Label layoutX="553.0" layoutY="369.0" text="Instrutores" textFill="#6b6262" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="552.0" layoutY="223.0" text="Descrição" textFill="#6b6262" underline="true">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageView" fitHeight="150.0" fitWidth="158.0" layoutX="556.0" layoutY="42.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/adicionar-usuario.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.621052622795105" green="0.5911501049995422" blue="0.5911501049995422" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+   </children>
+</AnchorPane>

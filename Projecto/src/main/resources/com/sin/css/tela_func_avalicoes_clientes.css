@@ -1,0 +1,53 @@
+/*
+ * Empty Stylesheet file.
+ */
+
+/*
+ * Empty Stylesheet file.
+ */
+
+ .mainFxmlClass {
+    -fx-background-color: #e5f8e8;
+    }
+
+    .textfields_esquerda{
+        -fx-border-width: 0px 0px 1px 0px;
+        -fx-border-color: #ccc;
+        -fx-background-color: transparent;
+    }
+
+    .painelcurva{
+        -fx-background-color: linear-gradient(to left,  #1bb479, #13537e); 
+
+        -fx-fill: linear-gradient(to right,  #26b07b, #13537e); 
+    }
+
+    .botao{
+        -fx-background-color: linear-gradient(to left,  #04985bf0, #09c49554);
+        -fx-text-fill: rgb(255, 255, 255);
+        -fx-background-radius: 10px
+    }
+
+    .tabela{
+        -fx-background-color: linear-gradient(to left,  #580bff03, #059bff05);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 10px
+    }
+    
+    .tabelinha{
+        -fx-background-color: linear-gradient(to right,  #0ce58b0c, #0ce58b07);
+        -fx-text-fill: rgb(0, 0, 0);
+        -fx-background-radius: 0px;}
+
+    .splitpane{
+        -fx-background-color: #04985bf0; 
+    }
+    
+ 
+    .textfields_direita{
+        -fx-border-width: 0px 0px 1px 0px;
+        -fx-border-color: #fffbfb;
+        -fx-background-color: transparent;
+        -fx-text-fill: #ffffff;
+    }
+    

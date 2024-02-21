@@ -10,46 +10,70 @@
         <maven.compiler.source>11</maven.compiler.source>
         <maven.compiler.target>11</maven.compiler.target>
     </properties>
+    
     <dependencies>
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-controls</artifactId>
             <version>13</version>
+        </dependency> 
+        
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/fxsampler -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>fxsampler</artifactId>
+            <version>1.0.11</version>
         </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/openjfx-dialogs -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>openjfx-dialogs</artifactId>
+            <version>1.0.3</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.controlsfx/controlsfx -->
+        <dependency>
+            <groupId>org.controlsfx</groupId>
+            <artifactId>controlsfx</artifactId>
+            <version>11.2.0</version>
+            <type>jar</type>
+        </dependency>
+
         <dependency>
             <groupId>org.openjfx</groupId>
             <artifactId>javafx-fxml</artifactId>
             <version>13</version>
         </dependency>
         
-         <!-- Hibernate JPA implementation -->
-    <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-core</artifactId>
-        <version>5.5.7.Final</version>
-    </dependency>
+        <!-- Hibernate JPA implementation -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>5.5.7.Final</version>
+        </dependency>
 
-    <!-- Hibernate JPA EntityManager (necessary for JPA) -->
-    <dependency>
-        <groupId>org.hibernate</groupId>
-        <artifactId>hibernate-entitymanager</artifactId>
-        <version>5.5.7.Final</version>
-    </dependency>
+        <!-- Hibernate JPA EntityManager (necessary for JPA) -->
+        <dependency>
+            <groupId>org.hibernate</groupId>
+            <artifactId>hibernate-entitymanager</artifactId>
+            <version>5.5.7.Final</version>
+        </dependency>
 
-    <!-- Dependency for JPA API -->
-    <dependency>
-        <groupId>javax.persistence</groupId>
-        <artifactId>javax.persistence-api</artifactId>
-        <version>2.2</version>
-    </dependency>
+        <!-- Dependency for JPA API -->
+        <dependency>
+            <groupId>javax.persistence</groupId>
+            <artifactId>javax.persistence-api</artifactId>
+            <version>2.2</version>
+        </dependency>
 
-    <!-- If you're using a database, you'll need the appropriate JDBC driver -->
-    <!-- Example: MySQL Connector/J -->
-    <dependency>
-        <groupId>mysql</groupId>
-        <artifactId>mysql-connector-java</artifactId>
-        <version>8.0.33</version>
-    </dependency>
+        <!-- If you're using a database, you'll need the appropriate JDBC driver -->
+        <!-- Example: MySQL Connector/J -->
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
 
     </dependencies>
     <build>

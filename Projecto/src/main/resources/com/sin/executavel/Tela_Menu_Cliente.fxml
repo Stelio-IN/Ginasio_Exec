@@ -1,0 +1,425 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.CategoryAxis?>
+<?import javafx.scene.chart.LineChart?>
+<?import javafx.scene.chart.NumberAxis?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Hyperlink?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.paint.Color?>
+<?import javafx.scene.paint.LinearGradient?>
+<?import javafx.scene.paint.Stop?>
+<?import javafx.scene.shape.QuadCurve?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="650.0" prefWidth="1300.0" styleClass="mainFxmlClass" stylesheets="@../css/tela_menu_cliente.css" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.Tela_Menu_Cliente_Controller">
+   <children>
+      <AnchorPane layoutX="42.0" layoutY="14.0" prefHeight="596.0" prefWidth="280.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.5894736647605896" green="0.5654581189155579" blue="0.5654581189155579" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <TextField fx:id="txtPagamento" layoutX="22.0" layoutY="249.0" prefHeight="30.0" prefWidth="223.0" promptText="Pendente" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigo" layoutX="25.0" layoutY="131.0" prefHeight="31.0" prefWidth="115.0" promptText="CLIE20230002" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtNome" layoutX="22.0" layoutY="190.0" prefHeight="30.0" prefWidth="223.0" promptText="Tobias zucula mphemo" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtPlanoAssociacao" layoutX="22.0" layoutY="306.0" prefHeight="30.0" prefWidth="223.0" promptText="Plano estudantil" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDataInicio" layoutX="22.0" layoutY="362.0" prefHeight="30.0" prefWidth="223.0" promptText="23/04/2023" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtDataFim" layoutX="22.0" layoutY="419.0" prefHeight="30.0" prefWidth="223.0" promptText="23/05/2023" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtObjectivo" layoutX="22.0" layoutY="478.0" prefHeight="30.0" prefWidth="223.0" promptText="Definir o sixpeak" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Label layoutX="25.0" layoutY="172.0" text="Nome" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="459.0" text="Objetivo" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="21.0" layoutY="403.0" text="Data final" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="345.0" text="Data inicio" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="22.0" layoutY="288.0" text="Plano de associação" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="26.0" layoutY="231.0" text="Status Plano" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="25.0" layoutY="111.0" text="Código" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <ImageView fx:id="imageView" fitHeight="100.0" fitWidth="90.0" layoutX="157.0" layoutY="67.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/adicionar-usuario.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="90.0" fitWidth="103.0" layoutX="21.0" layoutY="6.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo1_4.png" />
+               </image>
+            </ImageView>
+            <ImageView fitHeight="31.0" fitWidth="37.0" layoutX="118.0" layoutY="532.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/sairrr.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="113.0" layoutY="563.0" prefHeight="17.0" prefWidth="44.0" text="LogOut" textFill="#7e7e7e">
+               <font>
+                  <Font name="System Bold" size="10.0" />
+               </font>
+            </Label>
+            <Button fx:id="btnLogOut" layoutX="108.0" layoutY="532.0" mnemonicParsing="false" onAction="#logout" prefHeight="49.0" prefWidth="52.0" style="-fx-background-color: transparent;" />
+            <QuadCurve controlX="63.0" controlY="140.26934814453125" endX="40.0" endY="168.0" layoutX="225.0" layoutY="428.0" startX="-209.0" startY="168.0" stroke="#ffffff00" strokeType="INSIDE" styleClass="painelcurva">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4526315927505493" green="0.4241325557231903" blue="0.4241325557231903" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </QuadCurve>
+            <Label layoutX="143.0" layoutY="14.0" text="Dados Cliente" textFill="#057326">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="336.0" layoutY="456.0" prefHeight="157.0" prefWidth="407.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6117647290229797" green="0.5843137502670288" blue="0.5843137502670288" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <Label layoutX="37.0" layoutY="27.0" text="Nr. Avaliacoes" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="37.0" layoutY="79.0" text="Dias Para Fim do Plano" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtNumeroDeAvaliacoes" layoutX="227.0" layoutY="12.0" prefHeight="31.0" prefWidth="103.0" promptText="0" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtQuantidadeDias" layoutX="227.0" layoutY="63.0" prefHeight="31.0" prefWidth="103.0" promptText="1" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <Hyperlink fx:id="linkTelaAddPlano" layoutX="59.0" layoutY="120.0" text="Quer adicionar Plano ou remover? Clique  aqui" />
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutX="751.0" layoutY="14.0" prefHeight="596.0" prefWidth="512.0" style="-fx-background-color: white; -fx-background-radius: 20px;" stylesheets="@../css/tela_func_addplano.css">
+         <children>
+            <TextField fx:id="txtCodigoClientePrincipal" layoutX="25.0" layoutY="128.0" prefHeight="30.0" prefWidth="126.0" promptText="Codigo" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtNomeClientePrincipal" layoutX="16.0" layoutY="192.0" prefHeight="30.0" prefWidth="186.0" promptText="Tobias" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imageView1" fitHeight="93.0" fitWidth="79.0" layoutX="144.0" layoutY="70.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/adicionar-usuario.png" />
+               </image>
+            </ImageView>
+            <TextField fx:id="txtNomeClienteAssociado" layoutX="27.0" layoutY="421.0" prefHeight="30.0" prefWidth="186.0" promptText="conjuge" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtObjectivoClientePrincipal" layoutX="17.0" layoutY="243.0" prefHeight="30.0" prefWidth="100.0" promptText="Plano casal" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtCodigoClienteAssociado" layoutX="27.0" layoutY="357.0" prefHeight="30.0" prefWidth="126.0" promptText="Código" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtObjectivoClienteAssociado" layoutX="21.0" layoutY="483.0" prefHeight="30.0" prefWidth="100.0" promptText="Plano casal" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <ImageView fx:id="imageViewAssociado" fitHeight="93.0" fitWidth="79.0" layoutX="151.0" layoutY="298.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/adicionar-usuario.png" />
+               </image>
+            </ImageView>
+            <Label layoutX="24.0" layoutY="171.0" text="Nome " textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="223.0" text="Plano" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="33.0" layoutY="400.0" text="Nome " textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="453.0" text="Plano" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="23.0" layoutY="107.0" text="Cod:" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="32.0" layoutY="341.0" text="Cod:" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="27.0" layoutY="303.0" text="P. Associada" textFill="#057326" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Label layoutX="28.0" layoutY="62.0" text="EU" textFill="#057326" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+            <Button layoutX="78.0" layoutY="545.0" mnemonicParsing="false" onAction="#LimparCampos" prefHeight="30.0" prefWidth="120.0" styleClass="botao" text="Limpar">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="311.0" layoutY="545.0" mnemonicParsing="false" onAction="#RemoverPlano" prefHeight="30.0" prefWidth="139.0" styleClass="botao" text="Remover Plano">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <Button layoutX="311.0" layoutY="507.0" mnemonicParsing="false" onAction="#guardarPlano" prefHeight="30.0" prefWidth="139.0" styleClass="botao" text="Adicionar">
+               <font>
+                  <Font name="System Bold Italic" size="14.0" />
+               </font>
+            </Button>
+            <QuadCurve controlX="-155.0" controlY="52.89715576171875" endX="73.0" endY="-21.511882781982422" fill="#05a764" layoutX="234.0" layoutY="21.0" startX="-217.6005096435547" startY="-21.511890411376953" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+            <Label layoutX="139.0" layoutY="223.0" text="Status" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="165.0" layoutY="462.0" text="Status" textFill="#847e7e">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="txtStatusClientePrincipal" layoutX="135.0" layoutY="243.0" prefHeight="30.0" prefWidth="92.0" promptText="Activo" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="txtStatusClienteAssociado" layoutX="147.0" layoutY="483.0" prefHeight="30.0" prefWidth="92.0" promptText="Activo" styleClass="textfields_esquerda">
+               <font>
+                  <Font name="System Italic" size="14.0" />
+               </font>
+            </TextField>
+            <AnchorPane layoutX="282.0" layoutY="56.0" prefHeight="441.0" prefWidth="186.0" style="-fx-background-color: white; -fx-background-radius: 20px;" stylesheets="@../css/tela_func_addplano.css">
+               <children>
+                  <TextField fx:id="txtDuracaoPlano" layoutX="23.0" layoutY="341.0" prefHeight="26.0" prefWidth="152.0" promptText="duracao" styleClass="textfields_esquerda" />
+                  <DatePicker fx:id="dataPickerInicio" layoutX="24.0" layoutY="405.0" prefHeight="25.0" prefWidth="152.0" />
+                  <TableView fx:id="tabelaPlano" layoutX="19.0" layoutY="73.0" prefHeight="110.0" prefWidth="152.0" style="-fx-border-color: white;" styleClass="tabela">
+                     <columns>
+                        <TableColumn fx:id="colunaNomePlano" prefWidth="155.0" styleClass="tabelinha" text="Planos" />
+                     </columns>
+                  </TableView>
+                  <TextField fx:id="txtNomePlano" layoutX="19.0" layoutY="231.0" prefHeight="31.0" prefWidth="152.0" promptText="Plano Casal" styleClass="textfields_esquerda">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="txtPrecoPlano" layoutX="22.0" layoutY="285.0" prefHeight="31.0" prefWidth="152.0" promptText="Preço" styleClass="textfields_esquerda">
+                     <font>
+                        <Font name="System Italic" size="14.0" />
+                     </font>
+                  </TextField>
+                  <Label layoutX="22.0" layoutY="214.0" text="Nome do plano" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="20.0" layoutY="268.0" text="Preço " textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="322.0" text="Meses a pagar" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="24.0" layoutY="378.0" text="Data de início" textFill="#847e7e">
+                     <font>
+                        <Font name="System Bold" size="15.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="19.0" layoutY="32.0" text="Select Plano" textFill="#057326">
+                     <font>
+                        <Font name="System Bold Italic" size="13.0" />
+                     </font>
+                  </Label>
+                  <QuadCurve controlX="-91.0" controlY="15.89715576171875" endX="-64.0" endY="-21.0" fill="#05a764" layoutX="238.0" layoutY="21.0" startX="-226.0" startY="-21.0" stroke="WHITE" strokeType="INSIDE" styleClass="painelcurva" />
+               </children>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.5894736647605896" green="0.5654581189155579" blue="0.5654581189155579" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </AnchorPane>
+            <Label layoutX="261.0" layoutY="14.0" text="Seção para adicionar planos" textFill="#057326">
+               <font>
+                  <Font name="System Bold Italic" size="18.0" />
+               </font>
+            </Label>
+         </children>
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.7052631378173828" green="0.6477972865104675" blue="0.6477972865104675" />
+               </color>
+            </DropShadow>
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="333.0" layoutY="17.0" prefHeight="418.0" prefWidth="407.0" style="-fx-background-color: white; -fx-background-radius: 20px;">
+         <effect>
+            <DropShadow>
+               <color>
+                  <Color red="0.6631578803062439" green="0.6336842179298401" blue="0.6336842179298401" />
+               </color>
+            </DropShadow>
+         </effect>
+         <children>
+            <LineChart fx:id="grafico" layoutX="-1.0" layoutY="91.0" prefHeight="289.0" prefWidth="407.0" stylesheets="@../css/tela_menu_cliente.css">
+               <xAxis>
+                  <CategoryAxis side="BOTTOM" />
+               </xAxis>
+               <yAxis>
+                  <NumberAxis side="LEFT" />
+               </yAxis>
+            </LineChart>
+            <QuadCurve controlX="-157.0775146484375" controlY="288.6658020019531" endX="-6.914721965789795" endY="34.71459197998047" layoutX="290.0" layoutY="-158.0" rotate="49.1" startX="-219.53453063964844" startY="280.2518005371094" stroke="#ffffff00" strokeType="INSIDE" styleClass="painelcurva">
+               <fill>
+                  <LinearGradient endX="1.0" endY="1.0">
+                     <stops>
+                        <Stop>
+                           <color>
+                              <Color />
+                           </color>
+                        </Stop>
+                        <Stop offset="1.0">
+                           <color>
+                              <Color red="1.0" green="1.0" blue="1.0" />
+                           </color>
+                        </Stop>
+                     </stops>
+                  </LinearGradient>
+               </fill>
+               <effect>
+                  <DropShadow>
+                     <color>
+                        <Color red="0.4526315927505493" green="0.4241325557231903" blue="0.4241325557231903" />
+                     </color>
+                  </DropShadow>
+               </effect>
+            </QuadCurve>
+            <Label layoutX="264.0" layoutY="14.0" text="Desempenho" textFill="#15713b" underline="true">
+               <font>
+                  <Font name="System Bold Italic" size="19.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
